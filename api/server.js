@@ -1,5 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import userRouter from './routes/user.route.js';
 import  cors from 'cors'
 import dotenv from 'dotenv';
 dotenv.config();
@@ -22,3 +23,5 @@ mongoose.connect(process.env.MONGO).then(() => {
 app.listen(3000, () => {
     console.log('Server Is Running!');
 });
+
+app.use('/api/user', userRouter);
