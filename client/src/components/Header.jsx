@@ -14,19 +14,19 @@ export default function Header() {
             <input
               type='text'
               placeholder='Search...'  
-              className='bg-transparent border  focus:outline-none w-24 sm:w-64'
+              className='bg-transparent focus:outline-none w-24 sm:w-64'
             />
             <FaSearch className='text-slate-700'/>
          </form>
          <ul className= 'flex gap-4'>
             <Link to='/'>
-                <li className='hideen sm:inline hover:underline text-slate-700'>Home</li>
+                <li className='hidden sm:inline hover:underline text-slate-700'>Home</li>
             </Link>
             <Link to='/about'>
-                <li className='hideen sm:inline hover:underline text-slate-700'>About</li>
+                <li className='hidden sm:inline hover:underline text-slate-700'>About</li>
             </Link>
             <Link to='/signin'>
-                <li className='hideen sm:inline hover:underline text-slate-700'>Sign In</li>
+                <li className='sm:inline hover:underline text-slate-700'>Sign In</li>
             </Link>
          </ul>
         </div>
